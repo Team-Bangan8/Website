@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4a148c, #1a237e);
+    color: white;
+}
+
+.header {
+    background-color: #3e2b72;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 60px; 
+}
+
+.menu li {
+    margin: 0; 
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: right; 
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 30px; 
+    padding: 5px 10px; 
+    width: 250px; 
+    margin-left: 50px; 
+    margin-right: auto;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    background: none; /* No background color */
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #3e2b72; /* Deep purple for the icon */
+    margin-left: 5px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+
+.text-sections {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-sections .mental-health,
+.text-sections .mental-illness {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-sections h2 {
+    color: #ffca28;
+    margin-bottom: 1rem;
+}
+
+
+.image-container {
+    flex: 0;
+    position: absolute;
+    top: 1%;
+    right: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+.image-container img {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    border: 5px solid #ffca28;
+    object-fit: cover;
+}
